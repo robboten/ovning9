@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bish-Bosh 2.0</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Bish-Bosh 2.0
+        </h1>
+    </header>
+    <main>
+        <hr>
+        <blockquote>
+            Bish-Bosh listar alla tal mellan 1 och 100, men vissa undantag: Om talet är jämnt delbart med 3 listas
+            ‘Bish’ istället för talet. Om talet är jämnt delbart med 4 listas ‘Bosh’ istället för talet. Om talet är
+            jämnt delbart med både med 3 och 4 skrivs “Bish-Bosh” istället för talet.
+        </blockquote>
+        <hr>
+        <form action="#">
+
+            <fieldset>
+                <legend>
+                    Bish-Bosh 2.0
+                </legend>
+                <div class="form-group">
+                    <label for="stop">Stop nr</label>
+                    <input name="stop" type="number" id="stop" value="100">
+                </div>
+                <div class="form-group">
+                    <label for="bish">bish nr</label>
+                    <input name="bish" type="number" id="bish" value="3">
+                </div>
+                <div class="form-group">
+                    <label for="bosh">bosh nr</label>
+                    <input name="bosh" type="number" id="bosh" value="4">
+                </div>
+                <div class="form-group">
+                    <button name="run" id="run" class="btn btn-default btn-ghost">
+                        Run
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+        <hr>
+        <section>
+            <h3 class="terminal-prompt">
+                Results...
+            </h3>
+            <div id="output" name="output">
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        robboten 2022
+    </footer>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="bishbosh.js" async defer></script>
+</body>
+
+</html>

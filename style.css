@@ -1,0 +1,55 @@
+main,
+footer,
+header {
+    margin: 1rem 4rem 0.25rem 4rem;
+    display: block;
+    box-sizing: border-box;
+}
+
+header {
+    border-bottom: 1px dashed black;
+}
+
+footer {
+    text-align: right;
+}
+
+ul li.bg-done {
+    background-color: rgb(210, 210, 210);
+    text-decoration: line-through
+}
+
+ul li {
+    cursor: pointer;
+    padding: 1rem;
+}
+
+ul li #todocheck{
+    margin-right: 1rem;
+}
+
+ul>li::after{
+    content: "";
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
+
+.column {
+    display: inline-block;
+}
+
+.form-control{
+    flex-basis: 30%;
+    margin-right: 4rem;
+}
+
+.list{
+    flex-basis:65%;
+    padding: 1rem;
+    border: 1px solid black;
+}
